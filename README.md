@@ -1,29 +1,17 @@
-# MAIN — Every Human. Every Story. One Main Character.
+# MAIN — Website
 
-Brand: **MAIN** · Token: **$MAIN** · Community: **Main Characters**
+Official site for the MAIN movement ($MAIN on Solana).
+"Every Human. Every Story. One Main Character."
+
+## Files
+- `index.html` — the page
+- `styles.css` — all styling (fonts embedded)
+- `script.js` — animations
+
+## Live
+https://mainmovement.github.io/mainmovement/
 
 ## Links
 - Telegram: https://t.me/MAINMovement
-- X (Twitter): https://x.com/mainmovement01
+- X: https://x.com/mainmovement01
 - Instagram: https://instagram.com/MAINMovement01
-
-## Files (all self-contained — no assets folder needed)
-- `index.html` — page (images embedded)
-- `styles.css` — design (fonts embedded)
-- `script.js` — interactions
-
-## Token Facts
-| Item | Value |
-|---|---|
-| Total Supply | 1,000,000,000 |
-| Chain | Solana |
-| Tax | 0% |
-| Presale | None |
-| Owner | None |
-| Founder & Team | 14% — public, vested |
-| Community Fund | 5% — airdrops, contests |
-| Liquidity | Auto-locked at graduation |
-
-## Disclaimer
-$MAIN is a cultural-movement token — an identity and belonging symbol, not an
-investment contract. No promised utility, yield, or returns.
