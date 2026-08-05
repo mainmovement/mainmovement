@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAIN — Every Human. Every Story. One Main Character.</title>
+<meta name="description" content="MAIN is a global cultural movement for people who refuse to live as spectators. Stop watching. Start creating. Become the Main Character.">
+<link rel="icon" type="image/png" href="assets/logo-small.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══════════ LOADER ══════════ -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-ring">
+      <img src="assets/logo-small.png" alt="MAIN">
+    </div>
+    <div class="loader-text">MAIN<span class="gold">.</span></div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- ══════════ SCROLL PROGRESS ══════════ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ══════════ STARFIELD ══════════ -->
+<canvas id="stars" class="stars"></canvas>
+
+<!-- ══════════ NAV ══════════ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <img src="assets/logo-small.png" alt="MAIN logo" class="nav-logo">
+      <span class="nav-name">MAIN<span class="gold">.</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#reality">Reality</a>
+      <a href="#modes">NPC vs MAIN</a>
+      <a href="#laws">Five Laws</a>
+      <a href="#spotlight">Spotlight</a>
+      <a href="#token">Token</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#join" class="btn-gold">Join the Movement</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<header class="hero" id="top">
+  <div class="hero-bg" style="background-image:url('assets/hero.jpg');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-logo-wrap reveal">
+      <div class="hero-ring"></div>
+      <img src="assets/logo.png" alt="MAIN" class="hero-logo">
+    </div>
+    <p class="hero-kicker reveal">
+      <span class="pulse-dot"></span> THE MAIN CHARACTER &middot; $MAIN &middot; SOLANA
+    </p>
+    <h1 class="hero-title reveal">You were never<br><span class="gold-shimmer">a background character.</span></h1>
+    <div class="hero-type reveal">
+      <span class="type-static">I choose to</span>
+      <span class="type-dynamic" id="typeTarget"></span><span class="type-caret">|</span>
+    </div>
+    <p class="hero-sub reveal">The world taught you to watch. Algorithms taught you to follow.
+    But your story was always yours.</p>
+    <div class="hero-cta reveal">
+      <a href="#join" class="btn-gold btn-lg btn-shine">Enter the Movement</a>
+      <a href="https://t.me/MAINMovement" target="_blank" rel="noopener" class="btn-ghost btn-lg">Join Telegram</a>
+    </div>
+    <div class="hero-tags reveal">
+      <span>FAIR LAUNCH</span><span>NO PRESALE</span><span>NO OWNER</span><span>0% TAX</span>
+    </div>
+  </div>
+  <a href="#reality" class="hero-scroll" aria-label="Scroll down"><span></span></a>
+</header>
+
+<!-- ══════════ TICKER MARQUEE ══════════ -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>BECOME THE MAIN CHARACTER</span><span class="star">★</span>
+    <span>OWN YOUR STORY</span><span class="star">★</span>
+    <span>STOP WATCHING. START CREATING.</span><span class="star">★</span>
+    <span>NOT AN NPC</span><span class="star">★</span>
+    <span>WRITE YOUR NEXT CHAPTER</span><span class="star">★</span>
+    <span>EVERY HUMAN. EVERY STORY. ONE MAIN CHARACTER.</span><span class="star">★</span>
+    <span>BECOME THE MAIN CHARACTER</span><span class="star">★</span>
+    <span>OWN YOUR STORY</span><span class="star">★</span>
+    <span>STOP WATCHING. START CREATING.</span><span class="star">★</span>
+    <span>NOT AN NPC</span><span class="star">★</span>
+    <span>WRITE YOUR NEXT CHAPTER</span><span class="star">★</span>
+    <span>EVERY HUMAN. EVERY STORY. ONE MAIN CHARACTER.</span><span class="star">★</span>
+  </div>
+</div>
+
+<!-- ══════════ REALITY STATS ══════════ -->
+<section class="section section-stats" id="reality">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="kicker">The Reality</p>
+      <h2 class="section-title">Most memecoins die. <span class="gold">Most people watch.</span></h2>
+      <div class="gold-line center-line"></div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card reveal"><div class="stat-num"><span class="counter" data-target="36000">0</span>+</div><div class="stat-lab">tokens launched every day</div></div>
+      <div class="stat-card reveal"><div class="stat-num"><span class="counter" data-target="60">0</span>%</div><div class="stat-lab">dead within 24 hours</div></div>
+      <div class="stat-card reveal"><div class="stat-num"><span class="counter" data-target="12">0</span> days</div><div class="stat-lab">average lifespan</div></div>
+      <div class="stat-card reveal"><div class="stat-num">&lt;<span class="counter" data-target="1">0</span>%</div><div class="stat-lab">ever reach a real DEX</div></div>
+    </div>
+    <div class="grid-2" style="margin-top:90px;">
+      <div class="problem-visual reveal">
+        <div class="img-frame">
+          <img src="assets/npc.jpg" alt="The crowd of NPCs">
+          <div class="img-glow"></div>
+        </div>
+        <div class="img-caption">THE CROWD. SCROLLING. WAITING. FOLLOWING.</div>
+      </div>
+      <div class="reveal">
+        <p class="lead">We are surrounded by infinite stories — other people's success,
+        wealth, relationships, achievements. We consume. We compare. We wait.</p>
+        <p class="lead">Slowly we forget the most important thing: <b class="gold">we have our own story.</b></p>
+        <ul class="check-list">
+          <li>Scroll instead of create</li>
+          <li>Compare instead of improve</li>
+          <li>Wait instead of act</li>
+          <li>Follow instead of choose</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ NPC vs MAIN ══════════ -->
+<section class="section section-dark" id="modes">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="kicker">The Choice</p>
+      <h2 class="section-title">Two modes. <span class="gold">One decision.</span></h2>
+      <div class="gold-line center-line"></div>
+    </div>
+    <div class="modes">
+      <div class="mode-card npc reveal">
+        <div class="mode-label">NPC MODE</div>
+        <ul>
+          <li>Consume</li>
+          <li>Repeat</li>
+          <li>Follow</li>
+          <li>Wait for permission</li>
+          <li>Live someone else's story</li>
+        </ul>
+      </div>
+      <div class="mode-vs reveal">VS</div>
+      <div class="mode-card mc reveal">
+        <div class="mode-label">MAIN CHARACTER</div>
+        <ul>
+          <li>Create</li>
+          <li>Build</li>
+          <li>Choose</li>
+          <li>Take ownership</li>
+          <li>Write your own story</li>
+        </ul>
+      </div>
+    </div>
+    <p class="center-quote reveal">"The enemy is not rich people. The enemy is
+      <b>living without conscious choice.</b>"</p>
+  </div>
+</section>
+
+<!-- ══════════ MANIFESTO ══════════ -->
+<section class="manifesto">
+  <div class="container">
+    <p class="manifesto-text reveal">
+      For years, we watched. We watched other people's victories, other people's
+      dreams. We consumed stories created by others — while forgetting something
+      important.<br><br>
+      <b class="gold">We have our own story.</b><br><br>
+      This is the moment we stop watching.<br>
+      This is the moment we start creating.<br>
+      We are not background characters. We are the <span class="gold-shimmer">Main Characters.</span>
+    </p>
+    <p class="manifesto-sign reveal">— THE MAIN CHARACTER MANIFESTO</p>
+  </div>
+</section>
+
+<!-- ══════════ FIVE LAWS ══════════ -->
+<section class="section" id="laws">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="kicker">The Philosophy</p>
+      <h2 class="section-title">The <span class="gold">Five Laws</span></h2>
+      <div class="gold-line center-line"></div>
+    </div>
+    <div class="laws">
+      <div class="law reveal"><div class="law-num">LAW I</div><h3>Nobody Can Live Your Story</h3><p>Your journey cannot be copied. Your timeline is unique.</p></div>
+      <div class="law reveal"><div class="law-num">LAW II</div><h3>Creation Beats Consumption</h3><p>The world rewards creators, not spectators.</p></div>
+      <div class="law reveal"><div class="law-num">LAW III</div><h3>Action Creates Identity</h3><p>You don't become a Main Character by thinking. You become one by acting.</p></div>
+      <div class="law reveal"><div class="law-num">LAW IV</div><h3>Every Chapter Can Change</h3><p>Your current situation is not your final story.</p></div>
+      <div class="law reveal"><div class="law-num">LAW V</div><h3>Own Your Narrative</h3><p>Do not let algorithms write your life.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ INTERACTIVE SPOTLIGHT ══════════ -->
+<section class="section spotlight-section" id="spotlight">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="kicker">The Moment You Choose Yourself</p>
+      <h2 class="section-title">The <span class="gold">Spotlight</span> is yours.</h2>
+      <div class="gold-line center-line"></div>
+    </div>
+  </div>
+  <div class="spotlight-stage reveal" id="spotlightStage">
+    <div class="spotlight-beam" id="spotlightBeam"></div>
+    <div class="spotlight-star">★</div>
+    <div class="spotlight-msg" id="spotlightMsg">MOVE YOUR MOUSE. STEP INTO THE LIGHT.</div>
+  </div>
+  <div class="container">
+    <p class="center-quote reveal" style="margin-top:44px;">"The moment the spotlight finds you is the moment
+      <b>you decided to step forward.</b>"</p>
+  </div>
+</section>
+
+<!-- ══════════ TOKENOMICS ══════════ -->
+<section class="section section-dark" id="token">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="kicker">$MAIN Token</p>
+      <h2 class="section-title">Simple. Fair. <span class="gold">Built to last.</span></h2>
+      <div class="gold-line center-line"></div>
+    </div>
+    <div class="token-wrap">
+      <div class="token-chart reveal">
+        <div class="donut">
+          <div class="donut-hole">
+            <div class="donut-total">1B</div>
+            <div class="donut-sub">$MAIN</div>
+          </div>
+        </div>
+        <div class="legend">
+          <div class="legend-item"><span class="dot" style="background:#D4AF37;"></span><b>86%</b> Open Market</div>
+          <div class="legend-item"><span class="dot" style="background:#FFE9A3;"></span><b>14%</b> Founder &amp; Community Fund</div>
+          <div class="legend-note">Public wallet &middot; Labeled &middot; Vested</div>
+        </div>
+      </div>
+      <div class="token-facts reveal">
+        <div class="fact"><span>Total Supply</span><b>1,000,000,000</b></div>
+        <div class="fact"><span>Chain</span><b>Solana</b></div>
+        <div class="fact"><span>Buy / Sell Tax</span><b>0%</b></div>
+        <div class="fact"><span>Presale</span><b>None</b></div>
+        <div class="fact"><span>Contract Owner</span><b>None</b></div>
+        <div class="fact"><span>Liquidity</span><b>Auto-locked at graduation</b></div>
+        <div class="fact"><span>Founder &amp; Team</span><b>14% — public, vested</b></div>
+        <div class="fact"><span>Community Fund</span><b>5% — airdrops, contests</b></div>
+        <p class="token-note">No rug. No hidden bags. Every number verifiable on-chain.
+        The token is not the destination — it is a <b class="gold">symbol of belonging.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ROADMAP ══════════ -->
+<section class="section" id="roadmap">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="kicker">The Journey</p>
+      <h2 class="section-title">Culture → Community → <span class="gold">Identity → Economy</span></h2>
+      <div class="gold-line center-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="phase reveal"><div class="phase-tag">Phase 1 · Days 1–20</div><h3>The Awakening</h3><p>Daily philosophy, memes and questions. Identity signals — not follower counts. First 100 stories.</p></div>
+      <div class="phase reveal"><div class="phase-tag">Phase 2 · Days 21–45</div><h3>Community Formation</h3><p>#MyMainCharacterMoment goes live. MAIN PIONEERS — the first 100 members, the founding identity.</p></div>
+      <div class="phase reveal"><div class="phase-tag">Phase 3 · Days 46–70</div><h3>Identity Expansion</h3><p>MAIN Avatar System. MAIN Stories — real people, real transformations. Collaborations with creators.</p></div>
+      <div class="phase reveal"><div class="phase-tag">Phase 4 · Days 71–90</div><h3>Ecosystem Preparation</h3><p>Token architecture, community validation, launch assets.</p></div>
+      <div class="phase reveal"><div class="phase-tag">Phase 5 · Days 91–100</div><h3>The Launch Chapter</h3><p>Fair launch of $MAIN on Solana — same price for everyone. Airdrop to early movers. DexScreener, CoinGecko, CoinMarketCap.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ JOIN ══════════ -->
+<section class="section join" id="join">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="kicker">Get In</p>
+      <h2 class="section-title">Don't watch the story.<br><span class="gold-shimmer">Write it.</span></h2>
+      <div class="gold-line center-line"></div>
+    </div>
+    <div class="join-steps">
+      <div class="step reveal"><div class="step-num">1</div><h3>Join the Telegram</h3><p>The gathering of Main Characters — daily memes, rituals, votes, launch announcements.</p></div>
+      <div class="step reveal"><div class="step-num">2</div><h3>Follow $MAIN everywhere</h3><p>X, Instagram — philosophy every morning, memes every noon, a question every night.</p></div>
+      <div class="step reveal"><div class="step-num">3</div><h3>Share your moment</h3><p>Post #MyMainCharacterMoment — the day you decided to change. Your story is the movement's fuel.</p></div>
+      <div class="step reveal"><div class="step-num">4</div><h3>Be there at launch</h3><p>Invite your people, earn your airdrop allocation, and be part of chapter one.</p></div>
+    </div>
+    <div class="join-links reveal">
+      <a href="https://t.me/MAINMovement" target="_blank" rel="noopener" class="social-card">
+        <span class="social-name">TELEGRAM</span>
+        <span class="social-handle">@MAINMovement</span>
+      </a>
+      <a href="https://x.com/mainmovement01" target="_blank" rel="noopener" class="social-card">
+        <span class="social-name">X / TWITTER</span>
+        <span class="social-handle">@mainmovement01</span>
+      </a>
+      <a href="https://instagram.com/MAINMovement01" target="_blank" rel="noopener" class="social-card">
+        <span class="social-name">INSTAGRAM</span>
+        <span class="social-handle">@MAINMovement01</span>
+      </a>
+    </div>
+    <p class="join-tagline reveal">Every Human. Every Story. One Main Character. <span class="gold">★</span></p>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="container">
+    <img src="assets/logo-small.png" alt="MAIN" class="footer-logo">
+    <p class="footer-brand">MAIN<span class="gold">.</span> — $MAIN</p>
+    <p class="footer-links">
+      <a href="#reality">Reality</a> · <a href="#modes">NPC vs MAIN</a> · <a href="#laws">Five Laws</a> ·
+      <a href="#spotlight">Spotlight</a> · <a href="#token">Token</a> · <a href="#roadmap">Roadmap</a>
+    </p>
+    <p class="footer-disc">$MAIN is a cultural-movement token — an identity and belonging symbol, not an
+    investment contract. No promised utility, yield, or returns. Never spend more than you can afford to lose.
+    Verify the contract address from official channels only.</p>
+    <p class="footer-copy">© <span id="year"></span> MAIN — Every Human. Every Story. One Main Character.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
